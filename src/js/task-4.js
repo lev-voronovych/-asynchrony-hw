@@ -1,21 +1,22 @@
 const inputEl = document.querySelector(".input-field");
-
-let time = inputEl.value
-let timerId = null
-let isRuning = false
-
-console.log(time)
+const startBtn = document.querySelector(".start");
+let time = 0;
+let timerId = null;
+let isRuning = false;
 
 function timer() {
-    if (isRuning) return;
-    isRuning = true
-        timerId = setInterval(() => {
-            time--
-            console.log(time)
-            if (time === 0) {
-                clearInterval(timerid)
-                alert("час вийшов")
-            }
-     },1000)   
+  if (isRuning) return;
+  time = inputEl.value;
+  isRuning = true;
+  timerId = setInterval(() => {
+    time--;
+      console.log(time);
+      
+    if (time === 0) {
+      clearInterval(timerId);
+      isRuning = false;
+      alert("час вийшов");
+    }
+  }, 1000);
 }
-inputEl.addEventListener("input",timer)
+startBtn.addEventListener("click", timer);
