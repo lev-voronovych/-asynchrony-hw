@@ -1,0 +1,14 @@
+{
+  "name": "-asynchrony-hw",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "parcel index.html --open",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "parcel": "^2.16.1"
+  }
+}

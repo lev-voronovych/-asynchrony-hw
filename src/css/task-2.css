@@ -1,0 +1,17 @@
+
+
+
+.animationEl {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin: 10px;
+
+}
+
+.animationEl2 {
+    width: 50px;
+    height: 100px;
+    background-color: blue;
+    margin: 10px;
+}
